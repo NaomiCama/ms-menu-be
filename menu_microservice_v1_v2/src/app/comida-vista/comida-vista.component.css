@@ -1,0 +1,58 @@
+/* comida-vista.component.css */
+
+.container {
+    text-align: center; /* Centra horizontalmente los elementos */
+    height: 100vh; /* Altura del contenedor para centrar verticalmente */
+  }
+  
+  .form-group {
+    width: 300px; /* Ancho del formulario */
+    margin: 10px auto; /* Centra horizontalmente y añade 10px de margen vertical */
+  }
+  
+  .btn {
+    margin-top: 10px; /* Espacio entre el formulario y el botón */
+  }
+  
+  .table {
+    width: 60%; /* Ancho de la tabla */
+    margin: 20px auto; /* Centra horizontalmente y añade 20px de margen vertical */
+  }
+  
+  /* Estilos para la tabla */
+  .table th,
+  .table td {
+    text-align: center;
+  }
+  
+  /* Estilos para las filas de la tabla */
+  .table tbody tr {
+    background-color: #f8f9fa; /* Color de fondo de las filas */
+  }
+  
+  /* Estilos para la fila de encabezado de la tabla */
+  .table thead tr {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  .table th,
+  .table td {
+    padding: 10px; /* Espaciado interno de las celdas */
+  }
+  
+  /* Estilos para el botón Guardar */
+  .btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    border-color: #007bff; /* Color del borde del botón */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  /* Estilos para el texto del botón Guardar */
+  .btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+    border-color: #0056b3; /* Color del borde del botón al pasar el mouse */
+  }
+  

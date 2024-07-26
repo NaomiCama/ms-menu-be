@@ -1,0 +1,32 @@
+<div class="container">
+<div class="form-group">
+    <label for="menu">Menú:</label>
+    <select id="menu" class="form-control" [(ngModel)]="selectedMenu">
+      <option *ngFor="let comidaMenu of comidasMenus" [value]="comidaMenu.menuNombre">{{ comidaMenu.menuNombre }}</option>
+    </select>
+  </div> 
+
+  <div class="form-group">
+    <label for="comidas">Comidas:</label>
+    <select id="comidas" class="form-control" multiple [(ngModel)]="selectedComidas">
+      <option *ngFor="let comidaMenu of comidasMenus" [value]="comidaMenu.comidaNombre">{{ comidaMenu.comidaNombre }}</option>
+    </select>
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="onSave()">Guardar</button>
+
+  <table class="table mt-3" *ngIf="savedData.length > 0">
+    <thead>
+      <tr>
+        <th>Menú</th>
+        <th>Comidas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of savedData">
+        <td>{{ data.menu }}</td>
+        <td>{{ data.comidas.join(', ') }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
